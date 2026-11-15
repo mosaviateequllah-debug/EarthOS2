@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jaghori pilot point",
+        "note": "Illustrative pilot coordinate from the supplied design brief."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.4638,
+          33.1434
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+/* EarthOS 2.0 visual layer — progressive enhancement over the original interface. */
+:root{--bg:#050d12;--panel:#0a1a21;--panel2:#10252c;--line:rgba(129,213,184,.16);--text:#effaf5;--muted:#91aaa4;--green:#78f0b2;--green2:#20c997;--blue:#6bcdf0;--shadow:0 24px 70px rgba(0,0,0,.34);--radius:22px;color-scheme:dark}
+body{background:radial-gradient(ellipse at 78% -8%,rgba(27,132,104,.23),transparent 38%),radial-gradient(ellipse at 0% 65%,rgba(26,86,112,.12),transparent 34%),var(--bg);letter-spacing:.005em}
+.sidebar{background:rgba(4,14,19,.94);border-color:rgba(129,213,184,.12);box-shadow:0 0 60px rgba(0,0,0,.16)}
+.brand-mark{border-radius:14px;background:linear-gradient(145deg,#c0ffda,#29d69a 62%,#087d69);box-shadow:0 0 34px rgba(41,214,154,.2)}
+.nav button{min-height:44px;border:1px solid transparent;text-align:start}.nav button.active{background:linear-gradient(100deg,rgba(46,201,143,.18),rgba(46,201,143,.045));border-color:rgba(91,226,166,.16);box-shadow:inset 3px 0 #62e5a7;color:#f2fff8}
+.panel,.stat,.farm-card,.crop,.health-row,.story-card{border-color:var(--line);box-shadow:0 14px 38px rgba(0,0,0,.13);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.panel{background:linear-gradient(145deg,rgba(15,38,46,.94),rgba(8,24,31,.96));backdrop-filter:blur(14px)}
+.panel:hover,.stat:hover,.farm-card:hover,.crop:hover{border-color:rgba(105,235,174,.3);box-shadow:0 18px 48px rgba(0,0,0,.23)}
+.stat-value{letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+.btn,.icon-btn,.search input,.field input,.field select,.field textarea{transition:border-color .2s,background .2s,transform .2s}
+.btn{min-height:42px;border-radius:13px;font-weight:700}.btn.primary{background:linear-gradient(120deg,#79efb0,#25c795);box-shadow:0 8px 24px rgba(37,199,149,.17);color:#04251b}.btn.primary:hover{transform:translateY(-1px);filter:brightness(1.06)}
+:focus-visible{outline:2px solid #8cf5bd!important;outline-offset:3px!important}
+.topbar{backdrop-filter:blur(18px);background:rgba(5,15,21,.78);border-bottom:1px solid rgba(129,213,184,.1)}
+.footer{border-top:1px solid var(--line)}
+/* Small-screen navigation */
+.mobile-menu{display:none;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--line);border-radius:13px;background:var(--panel);color:var(--text);font-size:20px;cursor:pointer}
+.sidebar-backdrop{display:none}
+@media(max-width:900px){.app{grid-template-columns:minmax(0,1fr)}.sidebar{position:fixed;inset:0 auto 0 0;width:min(300px,86vw);height:100dvh;transform:translateX(-105%);transition:transform .28s ease;z-index:40;border-right:1px solid var(--line);overflow:auto}.sidebar.is-open{transform:translateX(0)}body[dir=rtl] .sidebar{inset:0 0 0 auto;transform:translateX(105%)}body[dir=rtl] .sidebar.is-open{transform:translateX(0)}.sidebar-backdrop.is-visible{display:block;position:fixed;inset:0;background:rgba(0,0,0,.58);backdrop-filter:blur(3px);z-index:35}.mobile-menu{display:inline-flex}.topbar{gap:12px}.top-actions{gap:8px}.search{max-width:220px}}
+@media(max-width:620px){.main{min-width:0}.topbar{padding:12px 14px;align-items:flex-start}.crumb{font-size:11px}.top-actions{flex-wrap:wrap;justify-content:flex-end}.search{order:3;flex-basis:100%;max-width:none}.top-actions .btn{font-size:11px;padding:9px 11px}.section-head{gap:12px;align-items:flex-start}.panel{padding:16px!important}.grid{gap:12px}.stat{min-width:0}.footer{gap:8px;flex-direction:column}.mobile-menu{flex:0 0 42px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

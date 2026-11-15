@@ -1,0 +1,1 @@
+@echo off\ncd /d %~dp0\npy -m uvicorn backend.main:app --reload\npause\n

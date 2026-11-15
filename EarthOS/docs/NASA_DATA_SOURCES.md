@@ -1,0 +1,11 @@
+# منابع رسمی داده
+- NASA POWER API: https://power.larc.nasa.gov/docs/services/api/
+- NASA Earthdata: https://www.earthdata.nasa.gov/
+- MODIS: https://modis.gsfc.nasa.gov/
+- SMAP: https://smap.jpl.nasa.gov/
+- GRACE-FO: https://gracefo.jpl.nasa.gov/
+- SWOT: https://swot.jpl.nasa.gov/
+- NISAR: https://nisar.jpl.nasa.gov/
+- PACE: https://pace.gsfc.nasa.gov/
+- Leaflet: https://leafletjs.com/
+- FastAPI: https://fastapi.tiangolo.com/\n
